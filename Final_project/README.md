@@ -66,9 +66,13 @@ Region \_Dim: Geographical data for regional analysis.
 
 
 
-🛠️ Key Features \& Technical Tasks
+Key Features \& Technical Tasks
+
+
 
 1\. Data Modeling
+
+
 
 Established relationships between Fact and Dimension tables using Primary \& Foreign Keys.
 
