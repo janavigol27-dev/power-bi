@@ -1,182 +1,76 @@
-Sales \& Customer Intelligence Dashboard
+##### **Project Name: Sales \& Trends Progress Analysis Dashboard**
 
 
 
-Project Overview
+###### Project Overview
 
 
 
-The Sales \& Customer Intelligence Dashboard is a comprehensive Power BI project designed to analyze sales performance, customer behavior, and regional trends. This project follows a professional Star Schema data model and provides actionable insights through interactive visualizations and advanced DAX measures.
+This project is a comprehensive Power BI dashboard designed to track and analyze business performance across Sales, Profits, and Customer trends. The goal is to provide actionable insights into product performance and regional sales distribution to help managers make data-driven decisions.
 
 
 
-Key Objectives 
+###### Key Features \& Functionalities
 
 
 
-Build a robust data model with a Star Schema layout.
+1\. Multipage Navigation
 
+The dashboard features a clean sidebar navigation to move between different views.
 
+Pages included: Landing Page, Customer's Details, Product's Details, Map Analysis, and Executive Summary.
 
-Implement complex DAX formulas for KPIs and measures.
 
 
+2\. Advanced Filtering \& Interactivity
 
-Apply Time Intelligence (YOY, MOM, YTD) to track growth.
+Dynamic Slicers: Users can filter data by Year, Month, Region, Segment, and Product Category.
 
+Drill through Action: Enabled a "Deep Dive" feature where users can right-click a Customer Name in the matrix to automatically navigate to the Product Details page for that specific customer.
 
+Numeric Range Parameters: Implemented sliders for custom profit range filtering to isolate specific performance brackets.
 
-Create a multi-page interactive report with enhanced UX/Navigation.
 
 
+3\. Data Visualizations \& KPI Tracking
 
-Ensure Mobile Compatibility and Row-Level Security (RLS).
+Sales \& Profit Progress: Tracking Total Sales ($844.02K) and Total Profit ($211.00K) with high-level KPI cards.
 
+Customer Insights: Visualizing a 900.95% YOY Customer Growth and tracking unique customer acquisition trends.
 
+Product Performance: Area charts for "Monthly Sales Trend by Category" and Tree maps for "Product Returns Breakdown".
 
-Dataset Description 
+Geospatial Mapping: A dedicated Map page to visualize sales density and regional performance globally.
 
 
 
-The analysis is based on six core tables:
+4\. Security Implementation
 
+Row-Level Security (RLS): Configured specific security roles (e.g., East \_Manager) using DAX filters.
 
+This ensures that managers can only view data related to their assigned regions, maintaining data privacy and focus.
 
-Sales \_Fact: Contains transactional data.
 
 
+###### Technical Skills Used
 
-Returns \_Fact: Tracks product returns.
 
 
+DAX Formulas: Created complex measures for YOY Growth, Return Rates, and Security Filters.
 
-Product \_Dim: Product details and categories.
+Data Modeling: Established relationships between Sales Fact tables and Dimension tables (Product, Customer, Date, Region).
 
+UI/UX Design: Applied consistent themes, custom backgrounds, and intuitive navigation buttons for a professional look.
 
 
-Customer \_Dim: Customer demographics and segments.
 
+###### Business Insights (Summary)
 
 
-Date \_Dim: Calendar details for time intelligence.
 
+High Growth: The business is expanding rapidly with a massive increase in new customer acquisition.
 
+Return Control: Identified Furniture and Technology as the categories with the highest return volumes, signaling a need for quality review.
 
-Region \_Dim: Geographical data for regional analysis.
-
-
-
-Key Features \& Technical Tasks
-
-
-
-1\. Data Modeling
-
-
-
-Established relationships between Fact and Dimension tables using Primary \& Foreign Keys.
-
-
-
-Designed a clean Star Schema for optimal performance.
-
-
-
-2\. DAX Measures \& Calculations
-
-
-
-Created core measures using CALCULATE, SUMX, COUNTX, and AVERAGEX.
-
-
-
-Developed Time Intelligence measures for:
-
-
-
-YOY (Year-Over-Year) Sales Growth.
-
-
-
-MOM (Month-Over-Month) Sales Trends.
-
-
-
-YTD (Year-To-Date) Total Sales.
-
-
-
-Implemented SWITCH logic for KPI classification and RELATED for joining values.
-
-
-
-3\. Visualizations \& UI/UX
-
-
-
-Main Dashboard: High-level KPIs, Sales/Profit trends by Month, and Segment-wise analysis.
-
-
-
-Customer Detail Page: Focuses on Top N Customers and Customer Performance.
-
-
-
-Matrix Heatmap: Used advanced conditional formatting to identify sales density across regions and time.
-
-
-
-Interactive Slicers: Dynamic filtering by Date, Product, Segment, and Region.
-
-
-
-Navigation: Custom buttons and Bookmarks for a seamless multi-page experience.
-
-
-
-4\. Advanced Features
-
-
-
-Top N Analysis: Identified Top N Products by Sales and Top N Customers by Profit.
-
-
-
-Drill through: Enabled deep-dive analysis into specific data points.
-
-
-
-Row-Level Security (RLS): Defined roles for Region Managers to view localized data.
-
-
-
-Color Palette (Used for Theme)
-
-
-
-Light Blue: #A6C3E6
-
-
-
-Coral: #F5B499
-
-
-
-Warm Yellow: #FFD891
-
-
-
-Sage Green: #B1D2A2
-
-
-
-Slate Grey: #979EB4
-
-
-
-Mobile Layout
-
-
-
-The report has been optimized for mobile viewing, prioritizing KPI cards and Top N visuals for on-the-go analysis.
+Top Products: "Empower Rich Mindshare" identified as a key revenue driver.
 
